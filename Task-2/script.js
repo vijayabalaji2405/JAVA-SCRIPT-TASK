@@ -57,10 +57,9 @@ for (const [team, odd] of Object.entries(game.odds)) {
   console.log(`Odd of ${teamStr} ${odd}`);
 }
 
-// ................doubt.................
-
-// const scorers = {};
-// for (const player of game.scored) {
-//   scorers[player] ? scorers[player]++ : (scorers[player] = 1);
-// }
-// console.log(scorers);
+//4
+const scorers = {};
+for (const player of game.scored) {
+  scorers[player] ? scorers[player]++ : (scorers[player] = 1);
+}
+console.log(scorers);
